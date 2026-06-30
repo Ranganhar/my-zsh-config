@@ -11,3 +11,32 @@
 *.key
 *token*
 *secret*
+
+# Editor runtime/cache/state
+.cache/
+.local/
+local/
+*.swp
+*.swo
+*.tmp
+.viminfo
+
+# Neovim runtime data, do not commit
+local/share/nvim/
+local/state/nvim/
+local/cache/nvim/
+
+# LazyVim / Mason downloaded data, do not commit
+nvim/.lazy/
+nvim/lazy/
+nvim/mason/
+vim/plugged/
+vim/bundle/
+
+# Secrets
+.env
+*.pem
+*.key
+*token*
+*secret*
+.secrets.zsh
