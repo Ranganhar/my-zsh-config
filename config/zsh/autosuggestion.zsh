@@ -1,0 +1,1 @@
+bindkey '^[f' forward-word

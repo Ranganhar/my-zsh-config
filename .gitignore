@@ -1,0 +1,13 @@
+.zsh_history
+.bash_history
+.ssh/
+.git-credentials
+.netrc
+.huggingface/
+.cache/
+.local/share/atuin/
+.docker/config.json
+*.pem
+*.key
+*token*
+*secret*
