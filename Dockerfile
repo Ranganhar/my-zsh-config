@@ -56,6 +56,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && update-ca-certificates \
   && rm -rf /var/lib/apt/lists/*
 
+ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+ENV GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
+ENV CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
 RUN useradd -m -s /usr/bin/zsh ${USER_NAME} && \
   echo "${USER_NAME}:${USER_PASSWD}" | chpasswd && \
   usermod -aG sudo ${USER_NAME}
